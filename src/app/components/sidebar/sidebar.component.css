@@ -1,0 +1,10 @@
+mat-nav-list {
+    min-width: 280px;
+}
+a.active, a.active:hover {
+    background-color: #3f51b5 !important;
+    color: white !important;
+}
+mat-icon {
+    padding-right: 20px;
+}

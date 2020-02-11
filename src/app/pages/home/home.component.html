@@ -1,0 +1,12 @@
+<div class="example-container">
+    <form class="example-form" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+        <mat-form-field>
+            <input matInput placeholder="Input" name="description" [formControl]="descriptionControl">
+            <mat-hint>Errors appear instantly!</mat-hint>
+            <mat-error *ngIf="descriptionControl.hasError('required')">
+                Email is <strong>required</strong>
+            </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit" [disabled]="formGroup.invalid">Save</button>
+    </form>
+</div>
